@@ -1,0 +1,39 @@
+helmd - security analysis engineering agent bundle
+====================================================
+
+WHAT THIS PACKAGE CONTAINS
+--------------------------
+helmd is a bundle for the DeepSeek Harness (dsh) agent runtime that turns the
+agent into a security-analysis assistant. It ships:
+
+- Domain analysis tools and playbooks for binary, mobile (Android), web,
+  network-protocol and malware sample triage (static analysis, hashing,
+  entropy, string/import tables, pcap review, evidence handling).
+- Reference documents describing exploitation techniques, common vulnerable
+  services and ports, web/protocol attack playbooks, and payload corpora used
+  to support defensive analysis, reverse engineering, CTF work and
+  authorized penetration testing.
+- A toolbox that runs locally on the operator's machine and only acts on
+  targets explicitly supplied by the operator during the session.
+
+INTENDED LEGITIMATE USE
+-----------------------
+- Security research and defensive analysis (understanding samples, IoCs,
+  attack chains) on systems the operator owns or is explicitly authorized
+  to test.
+- Reverse engineering, malware triage and incident-response support.
+- Security education, including capture-the-flag exercises and coursework.
+
+AUTHORIZATION AND RESPONSIBILITY
+--------------------------------
+The bundle does not target anything by itself: every scan, exploit check or
+network interaction is operator-initiated against operator-supplied targets.
+Operators are responsible for obtaining authorization, complying with
+applicable law, and audit logging. The package ships no self-propagating
+code, no persistence mechanism, no credential harvesting and no command-and-
+control infrastructure.
+
+REPORTING
+---------
+Report vulnerabilities or abuse of this package via the GitHub repository
+issue tracker: https://github.com/cxykyw/dsh-cxykyw-helm-d
